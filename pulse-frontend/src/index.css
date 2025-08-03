@@ -1,0 +1,9 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+.dot {
+  transition: transform 0.2s ease;
+}
+.translate-x-6 {
+  transform: translateX(1.5rem);
+}
