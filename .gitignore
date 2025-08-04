@@ -3,7 +3,7 @@ node_modules/
 pulse-frontend/node_modules/
 
 # Build output
-dist/
+#dist/
 build/
 pulse-frontend/build/
 pulse-frontend/dist/
@@ -46,7 +46,7 @@ Thumbs.db
 
 # Git backup
 *.orig
-dist
+#dist
 dist-ssr
 *.local
 

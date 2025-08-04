@@ -42,6 +42,17 @@ app.use("/api/user", require("./routes/user"));
 // Movie-related routes (fetch movies, favorites, etc.)
 app.use("/api/movies", require("./routes/movies"));
 
+// SERVE FRONTEND (Static Files)
+const path = require("path");
+
+// Serve everything inside the public folder as static assets
+app.use(express.static(path.join(__dirname, "public")));
+
+// If no other route matches (like an API route), send back index.html
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
+
 // DATABASE CONNECTION AND SERVER STARTUP
 // Connect to MongoDB database, then start the web server
 mongoose
