@@ -34,13 +34,13 @@ const authRoutes = require("./routes/auth"); // User authentication (login/regis
 
 // REGISTER ROUTES WITH EXPRESS APP
 // When someone visits /api/auth/*, it will be handled by authRoutes
-app.use("/api/auth", authRoutes); // Authentication endpoints (login, register, etc.)
+// TEMP ***** app.use("/api/auth", authRoutes); // Authentication endpoints (login, register, etc.)
 
 // User-related routes (profiles, preferences, etc.)
-app.use("/api/user", require("./routes/user")); 
+// TEMP ***** app.use("/api/user", require("./routes/user")); 
 
 // Movie-related routes (fetch movies, favorites, etc.)
-app.use("/api/movies", require("./routes/movies"));
+// TEMP ***** app.use("/api/movies", require("./routes/movies"));
 
 // SERVE FRONTEND (Static Files)
 const path = require("path");
