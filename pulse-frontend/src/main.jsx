@@ -24,7 +24,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     
     {/* ROUTER SETUP - Enables navigation between different pages/URLs */}
     {/* basename="/Pulse" means our app URLs start with /Pulse/ */}
-    <BrowserRouter basename="/Pulse">
+    <BrowserRouter>
       
       {/* AUTHENTICATION PROVIDER - Makes login state available throughout the app */}
       {/* This wraps the entire app so ANY component can access user authentication data */}

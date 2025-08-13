@@ -1,36 +1,93 @@
-# Node.js dependencies (root and pulse-frontend)
+################################################################################
+# Node / Package Managers
+################################################################################
 node_modules/
-pulse-frontend/node_modules/
+**/node_modules/
+.pnp.*
+.pnpm-debug.log
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
 
-# Build output
+################################################################################
+# Build / Output Artifacts
+################################################################################
 dist/
 build/
-pulse-frontend/build/
-pulse-frontend/dist/
+.out/
+.next/
+.next/
+out/
+**/dist/
+**/build/
+dist-ssr/
 
-# Logs
+################################################################################
+# Logs & Debug
+################################################################################
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+*.log
 
-# Runtime data
-.pnp.*
-.pnpm-debug.log
-
-# Environment variables
+################################################################################
+# Environment Files (keep examples like .env.example tracked if added)
+################################################################################
 .env
+.env.*.local
 .env.local
-.env.development.local
-.env.test.local
-.env.production.local
+**/.env
+**/.env.*.local
 
-# OS junk
+################################################################################
+# Coverage / Testing
+################################################################################
+coverage/
+.nyc_output/
+
+################################################################################
+# Caches / Temporary
+################################################################################
+*.cache
+.cache/
+.tmp/
+temp/
+*.swp
+*.tgz
+
+# Framework / Tool caches
+.next/
+.vercel/
+.eslintcache
+.stylelintcache
+tsbuildinfo
+*.tsbuildinfo
+
+################################################################################
+# TypeScript
+################################################################################
+*.tsbuildinfo
+
+################################################################################
+# OS / System
+################################################################################
 .DS_Store
 Thumbs.db
 
-# IDEs and editors
+################################################################################
+# Certificates / Keys
+################################################################################
+*.pem
+*.key
+
+################################################################################
+# Editors / IDEs
+################################################################################
 .vscode/
 .idea/
 *.suo
@@ -38,48 +95,20 @@ Thumbs.db
 *.njsproj
 *.sln
 
-# Misc
-*.log
-*.cache
-*.tgz
-*.swp
-
-# Git backup
+################################################################################
+# Git Merge / Backup
+################################################################################
 *.orig
-dist
-dist-ssr
+
+################################################################################
+# Misc
+################################################################################
 *.local
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# local env files
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# vercel
-.vercel
+################################################################################
+# Project Specific (frontend/backend env already covered by generic patterns)
+################################################################################
+pulse-frontend/node_modules/
+pulse-frontend/dist/
+pulse-frontend/build/
+backend/.env
